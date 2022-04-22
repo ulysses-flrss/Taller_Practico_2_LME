@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+  font-family: "Gang Of Three";
+  src: url("../font/gang_of_three.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  transition: 500ms all;
+}
+
+body {
+  background-color: rgba(180, 0, 0, 0.1);
+}
+
+
+.menu-nav {
+  padding: 10px 0;
+  background-color: #ad0000;
+  box-shadow: 1px 7px 10px #000;
+}
+
+.menu-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Gang Of Three";
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  transform: scale(1.10);
+  border-bottom: 4px solid black;
+  transition: 350ms all;
+  text-shadow: 0 0 10px #700000;
+}
+
+
+.menu-img:hover {
+  transform: scale(1.10);
+  transform: rotate(-10deg);
+}
+
+.menu-img:active {
+  transform: rotate(10deg);
+  transition: 50ms all;
+}
+
+
+.img{
+  width: 100px
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 5px;
+}
+
+.first-message {
+  font-family: 'Gang Of Three';
+  font-size: 50px;
+}
+
+.second-message {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.paragraph-article {
+  display: flex;
+  width: 35%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+.form-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label:not(.genre) {
+  font-size: 17.5px;
+  margin-bottom: 5px;
+}
+
+#genre {
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  background-color: rgba(180, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid rgba(180, 0, 0, 0.4);
+  transition: 150ms all;
+}
+
+input[type = "submit"] {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(180, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 5px 25px;
+  transition: 250ms all;
+  width: fit-content;
+  margin: auto;
+}
+
+input[type = "submit"]:hover {
+  transform: scale(1.10);
+  background-color: rgba(180, 0, 0, 0.8);
+  transition: 250ms all;
+}
+
+input[type = "submit"]:active {
+  transform: scale(1.20);
+  border: none;
+  outline: none;
+}
+
+input[type = "radio"] {
+  cursor: pointer;
+}
+
+
+footer i {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  margin: 1rem;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}

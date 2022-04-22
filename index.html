@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b5142e7f7e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <nav class="menu-nav">
+        <ul class="menu-ul">
+          <li class="menu-img"><a href="#"><img class="img" src="img/logo.png" alt=""></a></li>
+          <li class="menu-item"><a href="#">Inicio</a></li>
+          <li class="menu-item"><a href="#">El Club</a></li>
+          <li class="menu-item"><a href="">Actividades</a></li>
+          <li class="menu-item"><a href="">Torneo</a></li>
+          <li class="menu-item"><a href="">Inscripción en línea</a></li>
+          <li class="menu-item"><a href="">Vídeos</a></li>
+        </ul>
+      </nav>
+      <section class="section-container">
+        <article class="paragraph-article">
+          <p>A continuación estás a punto de Inscribirte a nuestra escuela de artes marciales, te aseguro que todos tus datos serán manejados de forma segura, no se venderán, ni darán a conocer a otras empresas, el objetivo de conocer tu información es unicamente conocerte, y así darte las facilidades necesarias para que pertenezcas a la mejor escuela de artes marciales de El Salvador. ¡A LUCHAR CAMPEÓN!</p>
+        </article>
+        <article class="form-article">
+
+
+          <form class="form-container" class="" action="index.html" method="post">
+            <h1 class="first-message">Inscribete</h1>
+            <h3 class="second-message">Datos Personales</h3>
+
+            <label for="">Nombres:</label>
+            <input type="text" pattern="[A-Za-z]{5, }" placeholder="Escriba Sus Nombres" minlength="5" title="Mínimo 5 caracteres | Solo Letras" required>
+
+            <label for="">Apellidos:</label>
+            <input type="text" name="" value="" pattern="[A-Za-z]{5, }" placeholder="Escriba Sus Apellidos" minlength="5" title="Mínimo 5 caracteres | Solo Letras" required>
+
+            <label for="">Fecha de Nacimiento:</label>
+            <input type="date" name="" value="" min="1962-01-01" max="2014-31-12" title="Edad Mínima: 8 Años | Edad Máxima: 60 Años" required>
+
+            <label for="">Edad:</label>
+            <input type="number" name="" value="" min="8" max="60" title="Edad Mínima: 8 Años | Edad Máxima: 60 Años" required>
+
+            <label for="">Genero:</label>
+
+            <div id="genre">
+              <label class="genre" for="Masculino">Masculino</label>
+              <input type="radio" name="genre" value="Masculino" required>
+
+              <label class="genre" for="Femenino">Femenino</label>
+              <input type="radio" name="genre" value="Femenino" required>
+            </div>
+
+
+            <label for="">Correo Electrónico</label>
+            <input type="email" name="" value="" placeholder="Escriba Su Correo Electrónico" required>
+
+            <label for="">Departamento:</label>
+            <select class="dept" name="dept" required>
+              <option value="Ahuachapán">Ahuachapán</option>
+              <option value="Cabañas">Cabañas</option>
+              <option value="Chalatenango">Chalatenango</option>
+              <option value="Cuscatlán">Cuscatlán</option>
+              <option value="La Libertad">La Libertad</option>
+              <option value="Morazán">Morazán</option>
+              <option value="La Paz">La Paz</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="San Salvador">San Salvador</option>
+              <option value="San Vicente">San Vicente</option>
+              <option value="Sonsonate">Sonsonate</option>
+              <option value="La Unión">La Unión</option>
+              <option value="Usulután">Usulután</option>
+            </select>
+
+            <label for="">Domicilio</label>
+            <textarea name="name" rows="8" cols="80" placeholder="Escriba Su Domicilio" required></textarea>
+            <input type="submit" name="" value="Registrarse">
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+        <li>Todos los Derechos Reservados | Diseñado Por Ulises Adonay Flores Martínez</li>
+      </ul>
+    </footer>
+  </body>
+</html>
