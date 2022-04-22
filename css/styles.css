@@ -150,6 +150,10 @@ input[type = "radio"] {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 footer i {
   font-size: 2rem;
@@ -161,33 +165,21 @@ footer i {
 footer i:hover {
   transform: scale(1.25);
   transition: 150ms all;
-
 }
 
 footer ul{
   display: flex;
   list-style: none;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   margin: auto;
   justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
-  input, select, textarea {
-    margin-bottom: 15px;
-    font-size: 45px;
-    padding: 5px;
-    border: none;
-    background-color: rgba(180, 0, 0, 0.05);
-    border-radius: 3px;
-  }
-
   .menu-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
   }
 
   .menu-ul li a {
@@ -199,5 +191,47 @@ footer ul{
 
   .menu-item {
     padding: 15px;
+  }
+
+  .paragraph-article {
+    display: flex;
+    width: 90%;
+    text-align: justify;
+    font-size: 19px;
+  }
+  
+  
+  .form-container *{
+    width: 95%;
+    flex-direction: column;
+  }
+
+  
+  label:not(.genre) {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  #genre {
+    margin-bottom: 0px;
+  }
+
+  input, select, textarea {
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 5px;
+  }
+
+  input[type = "radio"] {
+    width: fit-content;
+  }
+
+  .first-message {
+    margin-top: 30px;
+    font-size: 35px;
+  }
+
+  .second-message {
+    font-size: 17px;
   }
 }
