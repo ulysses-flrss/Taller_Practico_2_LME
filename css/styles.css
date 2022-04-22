@@ -69,14 +69,14 @@ body {
 }
 
 .first-message {
-  font-family: 'Gang Of Three';
+  font-family: 'Gang Of Three', sans-serif;
   font-size: 50px;
 }
 
 .second-message {
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  margin: 5px 0 20px 0;
+  font-size: 18px;
+  font-family: 'Gang Of Three', sans-serif;
 }
 
 
@@ -119,13 +119,12 @@ input:focus, select:focus, textarea:focus {
 
 input[type = "submit"] {
   display: flex;
-  justify-content: center;
   background-color: rgba(180, 0, 0, 0.5);
   cursor: pointer;
+  margin: auto;
   padding: 5px 25px;
   transition: 250ms all;
   width: fit-content;
-  margin: auto;
 }
 
 input[type = "submit"]:hover {
@@ -148,8 +147,14 @@ input[type = "radio"] {
 footer i {
   font-size: 2rem;
   text-decoration: none;
-  color: #000;
+  color: rgba(180, 0, 0, 0.7);
   margin: 1rem;
+}
+
+footer i:hover {
+  transform: scale(1.25);
+  transition: 150ms all;
+
 }
 
 footer ul{
